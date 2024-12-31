@@ -3,6 +3,7 @@
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
+    "allowImportingTsExtensions": false,
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
@@ -12,8 +13,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
+    "incremental": true,  
+    "useDefineForClassFields": true,
+    "allowSyntheticDefaultImports": true,  
+    "forceConsistentCasingInFileNames": true,
+       "plugins": [
       {
         "name": "next"
       }
